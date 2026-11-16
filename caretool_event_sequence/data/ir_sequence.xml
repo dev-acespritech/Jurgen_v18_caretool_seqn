@@ -7,6 +7,7 @@
             <field name="padding">5</field>
             <field name="company_id" eval="False"/>
         </record>
+        
         <record id="seq_sale_order_event" model="ir.sequence">
             <field name="name">Sale Order - Event</field>
             <field name="code">sale.order.event</field>
@@ -14,6 +15,7 @@
             <field name="padding">5</field>
             <field name="company_id" eval="False"/>
         </record>
+        
         <record id="seq_account_invoice_event" model="ir.sequence">
             <field name="name">Invoice - Event</field>
             <field name="code">account.invoice.event</field>
