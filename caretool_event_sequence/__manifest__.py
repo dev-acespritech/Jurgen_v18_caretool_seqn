@@ -12,9 +12,7 @@
     'name': 'Caretool Event Sequence',
     'summary': 'Dedicated number sequence for Event-related Sale Orders and Invoices',
     'description': """
-Assigns a separate, editable sequence to Sale Orders
-keeping them numbered apart from regular
-sales.
+    Separate, editable number sequences for event quotations, sales orders and invoices.
     """,
     'version': '18.0.1.0.0',
     'author': 'Acespritech Solutions Pvt. Ltd.',

@@ -1,5 +1,5 @@
 <odoo>
-    <data>
+    <data noupdate="1">
         <record id="seq_sale_quotation_event" model="ir.sequence">
             <field name="name">Quotation - Event</field>
             <field name="code">sale.quotation.event</field>

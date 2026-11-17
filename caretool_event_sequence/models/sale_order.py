@@ -14,15 +14,14 @@ from odoo import models, fields, api
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    is_event_sequence_applied = fields.Boolean(copy=False)        # quotation number given
-    is_event_order_sequence_applied = fields.Boolean(copy=False)  # sales order number given
+    is_event_sequence_applied = fields.Boolean(copy=False)
+    is_event_order_sequence_applied = fields.Boolean(copy=False)
 
     def _has_event_lines(self):
         self.ensure_one()
         return any(
                 line.event_id or line.event_ticket_id
-                for line in self.order_line
-            )
+                for line in self.order_line)
 
     def _apply_event_quotation_sequence(self):
         for order in self:
